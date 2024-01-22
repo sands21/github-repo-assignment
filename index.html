@@ -12,8 +12,16 @@
     </header>
     <main>
         <input type="text" id="username" placeholder="Enter GitHub username">
+        <select id="per-page-select">
+            <option value="10">10 per page</option>
+            <option value="25">25 per page</option>
+            <option value="50">50 per page</option>
+            <option value="100">100 per page</option>
+        </select>
         <button id="fetch-button">Fetch Repositories</button>
         <div id="repositories"></div>
+        <div id="pagination">
+            </div>
     </main>
     <script src="script.js"></script>
 </body>
